@@ -1,19 +1,15 @@
 package com.hcl.CreditCheck.model;
 
-import org.hibernate.annotations.CreationTimestamp;
-
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+//import javax.persistence.EnumType;
+//import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import java.sql.Timestamp;
-
 @Entity
-@Table(name="accounts")
+@Table(name="account")
 public class Account {
 	public Account() {}
 	@Id
