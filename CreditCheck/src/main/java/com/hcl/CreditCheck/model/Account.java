@@ -20,9 +20,10 @@ public class Account {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String accountId;
-	private String nameAddress;
+	private String name;
+	private String address;
 	private String status;
-	private int balance;
+	private double balance;
 	public int getId() {
 		return id;
 	}
@@ -35,22 +36,29 @@ public class Account {
 	public void setAccountId(String accountId) {
 		this.accountId = accountId;
 	}
-	public String getNameAddress() {
-		return nameAddress;
+	public String getName() {
+		return name;
 	}
-	public void setNameAddress(String nameAddress) {
-		this.nameAddress = nameAddress;
+	public void setName(String name) {
+		this.name = name;
 	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
 	public String getStatus() {
 		return status;
 	}
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public int getBalance() {
+	public double getBalance() {
 		return balance;
 	}
-	public void setBalance(int balance) {
+	public void setBalance(double balance) {
 		this.balance = balance;
 	}
 }

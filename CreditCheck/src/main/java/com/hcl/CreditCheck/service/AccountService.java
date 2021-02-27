@@ -14,12 +14,8 @@ import com.hcl.CreditCheck.repository.AccountRepository;
 public class AccountService {
 	@Autowired
 	public AccountRepository accountRepository;
-	
-	public boolean existsbyId(int id) {
-    	return accountRepository.existsById(id);
-    }
     
-    public List<Account> get(String AccountId) { //Read
+    public List<Account> get(String AccountId) {
     	return accountRepository.findByAccountId(AccountId);
     }
 }
